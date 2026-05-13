@@ -1,0 +1,56 @@
+# ================================================
+# .vercelignore — CareerCompass / Windows deploy
+# Prevents Vercel CLI from scanning Windows user
+# profile paths that cause EACCES/EPERM/EBUSY errors
+# ================================================
+
+# Git & dependencies
+**/.git
+**/node_modules
+
+# --- Windows User Profile directories ---
+**/Documents
+**/Desktop
+**/Music
+**/Pictures
+**/Videos
+**/Downloads
+**/Contacts
+**/Favorites
+**/Links
+**/Searches
+**/Saved Games
+**/OneDrive
+**/3D Objects
+
+# --- Windows registry hive files (EBUSY) ---
+**/ntuser.dat
+**/ntuser.dat.LOG*
+**/ntuser.ini
+**/NTUSER.DAT
+**/NTUSER.DAT.LOG*
+
+# --- AppData (all of it, catches all sub-paths) ---
+**/AppData/**
+
+# Explicit sub-paths kept for clarity / legacy
+**/AppData/Local/**
+**/AppData/Local/Microsoft/**
+**/AppData/Local/Microsoft/Windows/INetCache/**
+**/AppData/Local/Packages/**
+**/AppData/Local/Temp/**
+**/AppData/Local/Docker/**
+**/AppData/Roaming/**
+**/AppData/Roaming/Code/**
+**/AppData/Roaming/Code/Cache/**
+**/AppData/Roaming/WhatsApp/**
+
+# --- Windows paging / hibernation files ---
+**/pagefile.sys
+**/swapfile.sys
+**/hiberfil.sys
+
+# --- Misc OS files ---
+**/.DS_Store
+**/Thumbs.db
+**/desktop.ini

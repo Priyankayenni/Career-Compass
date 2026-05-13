@@ -1,0 +1,24 @@
+# Prevent Vercel CLI from scanning your Windows user profile.
+**/.git
+**/node_modules
+**/AppData
+**/AppData/Roaming/Code
+**/AppData/Roaming/Code/**
+**/Documents
+**/Desktop
+**/Music
+**/Pictures
+**/Videos
+**/ntuser.dat
+**/ntuser.dat.LOG*
+**/AppData/Local/Microsoft/Windows/INetCache
+**/AppData/Local/Packages
+**/AppData/Local/Packages/**
+**/AppData/Local/Temp
+**/AppData/Local/Temp/**
+**/AppData/Roaming/Code/Cache/**
+**/AppData/Roaming/Code/Cache
+
+
+
+

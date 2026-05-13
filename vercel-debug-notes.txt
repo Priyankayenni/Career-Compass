@@ -1,0 +1,27 @@
+Vercel CLI local deploy issues on Windows.
+
+Last observed errors:
+- EACCES: lstat C:\Users\Priya\AppData\Local\Docker\run\userAnalyticsOtlpHttp.sock (fixed by deleting socket)
+- EPERM: scandir C:\Users\Priya\AppData\Local\Microsoft\Windows\INetCache\Low\Content.IE5 (mitigated by renaming/deleting)
+- EBUSY: open C:\Users\Priya\NTUSER.DAT (mitigated by adding vercelignore exclusions)
+- ENOENT/EPERM on VSCode global storage: C:\Users\Priya\AppData\Roaming\Code\User\globalStorage\state.vscdb-journal (added AppData/Roaming/Code exclusions)
+- New ENOENT on WhatsApp Desktop cache tmp file under AppData\Local\Packages\... (need to exclude AppData\Local\Packages too)
+
+Current vercelignore includes:
+- **/AppData
+- **/AppData/Roaming/Code
+- **/AppData/Roaming/Code/**
+- **/Documents
+- **/Desktop
+- **/Music
+- **/Pictures
+- **/Videos
+- **/ntuser.dat
+- **/ntuser.dat.LOG*
+- **/AppData/Local/Microsoft/Windows/INetCache
+
+Next change to try:
+- Add: **/AppData/Local/Packages
+- Add: **/AppData/Local/Packages/**
+- Add: **/AppData/Local/Temp
+
