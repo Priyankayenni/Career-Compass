@@ -2,7 +2,7 @@
 
 **Personalized AI-powered career guidance platform for Intermediate and B.Tech students of Andhra Pradesh & Telangana.**
 
-[Live Demo](http://localhost:5174/login) *(Update after deployment)*
+[Live Demo](http://localhost:3000/careercompass_v5.html) *(Update after deployment)*
 
 ---
 
