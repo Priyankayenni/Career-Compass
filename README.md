@@ -1,6 +1,6 @@
-# 🧭 CareerCompass — AP & Telangana
+# 🧭 CareerCompass 
 
-**Personalized AI-powered career guidance platform for Intermediate and B.Tech students of Andhra Pradesh & Telangana.**
+**Personalized AI-powered career guidance platform for Intermediate and B.Tech students of India.**
 
 [Live Demo](http://localhost:3000/careercompass_v5.html) *(Update after deployment)*
 
